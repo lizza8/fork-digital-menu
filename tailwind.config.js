@@ -1,0 +1,137 @@
+module.exports = {
+  darkMode: ["class"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        border: "hsl(0, 0%, 25%)",
+        input: "hsl(0, 0%, 30%)",
+        ring: "hsl(32, 90%, 54%)",
+        background: "hsl(222, 15%, 8%)",
+        foreground: "hsl(0, 0%, 98%)",
+        primary: {
+          DEFAULT: "hsl(32, 90%, 54%)",
+          foreground: "hsl(0, 0%, 100%)",
+          hover: "hsl(32, 90%, 48%)",
+          active: "hsl(32, 90%, 42%)",
+        },
+        secondary: {
+          DEFAULT: "hsl(32, 60%, 40%)",
+          foreground: "hsl(0, 0%, 100%)",
+          hover: "hsl(32, 60%, 36%)",
+          active: "hsl(32, 60%, 32%)",
+        },
+        tertiary: {
+          DEFAULT: "hsl(210, 8%, 20%)",
+          foreground: "hsl(0, 0%, 100%)",
+        },
+        accent: {
+          DEFAULT: "hsl(342, 78%, 60%)",
+          foreground: "hsl(0, 0%, 100%)",
+        },
+        muted: {
+          DEFAULT: "hsl(222, 15%, 12%)",
+          foreground: "hsl(0, 0%, 70%)",
+        },
+        card: {
+          DEFAULT: "hsl(222, 15%, 12%)",
+          foreground: "hsl(0, 0%, 98%)",
+        },
+        popover: {
+          DEFAULT: "hsl(222, 15%, 12%)",
+          foreground: "hsl(0, 0%, 98%)",
+        },
+        success: {
+          DEFAULT: "hsl(145, 62%, 45%)",
+          foreground: "hsl(0, 0%, 100%)",
+        },
+        warning: {
+          DEFAULT: "hsl(40, 95%, 60%)",
+          foreground: "hsl(222, 15%, 8%)",
+        },
+        error: {
+          DEFAULT: "hsl(0, 85%, 60%)",
+          foreground: "hsl(0, 0%, 100%)",
+        },
+        info: {
+          DEFAULT: "hsl(210, 90%, 55%)",
+          foreground: "hsl(0, 0%, 100%)",
+        },
+        gray: {
+          50: "hsl(0, 0%, 96%)",
+          100: "hsl(0, 0%, 90%)",
+          200: "hsl(0, 0%, 80%)",
+          300: "hsl(0, 0%, 70%)",
+          400: "hsl(0, 0%, 60%)",
+          500: "hsl(0, 0%, 50%)",
+          600: "hsl(0, 0%, 40%)",
+          700: "hsl(0, 0%, 30%)",
+          800: "hsl(0, 0%, 20%)",
+          900: "hsl(0, 0%, 10%)",
+        },
+      },
+      fontFamily: {
+        sans: ["Manrope", "sans-serif"],
+        serif: ["Figtree", "sans-serif"],
+        mono: ['"Space Mono"', "monospace"],
+      },
+      fontSize: {
+        h1: ["48px", { lineHeight: "1.2", fontWeight: "500" }],
+        h2: ["36px", { lineHeight: "1.2", fontWeight: "500" }],
+        h3: ["28px", { lineHeight: "1.2", fontWeight: "500" }],
+        h4: ["22px", { lineHeight: "1.2", fontWeight: "400" }],
+        "body-lg": ["18px", { lineHeight: "1.5", fontWeight: "400" }],
+        body: ["16px", { lineHeight: "1.5", fontWeight: "400" }],
+        "body-sm": ["14px", { lineHeight: "1.5", fontWeight: "300" }],
+        caption: ["12px", { lineHeight: "1.4", fontWeight: "300" }],
+      },
+      spacing: {
+        1: "4px",
+        2: "8px",
+        4: "16px",
+        6: "24px",
+        8: "32px",
+        12: "48px",
+        16: "64px",
+        xs: "8px",
+        sm: "16px",
+        md: "24px",
+        lg: "32px",
+        xl: "48px",
+        "2xl": "64px",
+      },
+      borderRadius: {
+        sm: "4px",
+        md: "8px",
+        lg: "12px",
+        full: "9999px",
+      },
+      boxShadow: {
+        sm: "0 1px 2px hsla(0, 0%, 0%, 0.25)",
+        md: "0 2px 4px hsla(0, 0%, 0%, 0.3)",
+        lg: "0 4px 12px hsla(0, 0%, 0%, 0.35)",
+        xl: "0 8px 24px hsla(0, 0%, 0%, 0.45)",
+        "primary-button": "0 4px 12px hsla(32, 90%, 54%, 0.3)",
+      },
+      backgroundImage: {
+        "gradient-primary": "linear-gradient(135deg, hsl(32, 90%, 54%) 0%, hsl(342, 78%, 60%) 100%)",
+        "gradient-secondary": "linear-gradient(135deg, hsl(32, 60%, 40%) 0%, hsl(342, 68%, 50%) 100%)",
+        "gradient-accent": "linear-gradient(135deg, hsl(30, 85%, 52%) 0%, hsl(342, 75%, 58%) 100%)",
+      },
+      transitionDuration: {
+        fast: "150ms",
+        normal: "300ms",
+        slow: "600ms",
+      },
+      transitionTimingFunction: {
+        "ease-in": "cubic-bezier(0.4, 0, 1, 1)",
+        "ease-out": "cubic-bezier(0.0, 0, 0.2, 1)",
+        "ease-in-out": "cubic-bezier(0.4, 0, 0.2, 1)",
+      },
+    },
+  },
+  plugins: [],
+};
